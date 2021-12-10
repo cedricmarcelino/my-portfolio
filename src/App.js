@@ -8,9 +8,11 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Header />
-      <div className="relative">
+      <div className="min-h-screen bg-clean flex flex-col">
+        <Header />
         <Intro />
+      </div>
+      <div>
         <Skills />
         <Projects />
         <Contact />

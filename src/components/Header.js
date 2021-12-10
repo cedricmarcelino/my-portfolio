@@ -2,16 +2,11 @@
 
 function Header() {
     return (
-        <header className="p-5 sticky top-0 z-50 flex justify-between text-xl font-semibold">
-            <div>
-                <span>CEDRIC MARCELINO</span>
+        <header className="p-4 flex justify-between text-xl font-semibold bg-fresh text-vermillion">
+            <div className="rounded-full border-2 border-solid border-black p-1 ">
+                <span>CM</span>
             </div>
-            <nav>
-                <a href="./" className="m-4">ABOUT</a> 
-                <a href="./" className="m-4">SKILLS</a> 
-                <a href="./" className="m-4">PROJECTS</a> 
-                <a a href="./" className="m-4">CONTACT</a>
-            </nav>
+            <i className="text-2xl fas fa-bars cursor-pointer pt-2"></i>
         </header>
     )
 }
