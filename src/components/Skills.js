@@ -3,7 +3,9 @@ import tailwindlogo from  '../icons/tailwind-css.png'
 function Skills() {
     
     return (
-        <div className="py-4 text-center text-3xl bg-fresh">
+        <>
+        <a className="block relative -top-72px" id="tech"></a>
+        <div className="py-4 text-center text-3xl bg-fresh" id="">
             <span className="font-semibold text-vermillion">Technologies</span>
             <div className="flex flex-wrap text-9xl text-center p-4">
                 <i className="py-2 text-htmllogo fab fa-html5 w-1/2"></i>
@@ -16,6 +18,7 @@ function Skills() {
                 <i className="py-2 text-githublogo fab fa-github w-1/2"></i>
             </div>
         </div>
+        </>
     )
 }
 

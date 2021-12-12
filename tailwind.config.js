@@ -3,9 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        '72px': '72px'
+      },
       colors: {
         fresh: '#F5F6E6',
         "fresh-dark": "#E1E4B6",
+        "clean-dark": "#B4B4B4",
         vermillion: '#353956',
         sunshine: '#54668E',
         clean: '#E8E8E8',

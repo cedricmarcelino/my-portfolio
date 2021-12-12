@@ -4,21 +4,22 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import MobileMenu from "./components/MobileMenu";
+import {useState} from 'react';
 
 function App() {
+  const [mobileMenu,showMobileMenu] = useState(false)
+
   return (
-    <>
-      <div className="min-h-screen bg-clean flex flex-col">
-        <Header />
-        <Intro />
-      </div>
-      <div>
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    </>
+    <div>
+      <Header showMobileMenu={showMobileMenu} mobileMenu={mobileMenu}/>
+      {mobileMenu && <MobileMenu showMobileMenu={showMobileMenu}/>}
+      <Intro />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
